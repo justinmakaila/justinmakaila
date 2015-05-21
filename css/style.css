@@ -1,0 +1,95 @@
+html {
+	/* Gray40, #666666, 102-102-102 */
+	color: #666;
+	/* Body looks to its parent for how to scale the dynamic property */
+	height: 100%;
+}
+
+body {
+	/* This sets the text and line height with this specifc font throughout the index file */
+	font: 16px/1.6 "Helvetica Neue",Helvetica,Arial,sans-serif;
+	/* Allows long words to be broken and wrap onto the next line */
+	word-wrap: break-word;
+}
+
+a {
+	/* Specifies the painting area of the background */
+	background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+
+    /* This sets the background to blue fot what happens next */
+	background-color: #5D8AA6;
+	/* Colors the text transparent so you can see the background */
+	color: transparent;
+	/* Opacity is set in place for the hover effect, in this case, fade-in-out */
+	opacity: 0.6;
+	/* Cause who needs underlined links? */
+	text-decoration: none;
+
+    transition: opacity 1s ease-in-out;
+    /* Vendor prefix MOZ(firefox), WEBKIT(chrome, safari, ios, android), O(opera), MS(ie) */
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+}
+
+a:hover {
+	/* Opacity is set in place for the hover effect, in this case, fade-in-out */
+	opacity: 1.0;
+	/* This transition makes it so opacity fades in and out at its set time */
+    transition: opacity .55s ease-in-out;
+    -moz-transition: opacity .55s ease-in-out;
+    -webkit-transition: opacity .55s ease-in-out;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+ul li {
+	line-height: 1.5;
+	/* These two list propertys are for fallback list styles*/
+	list-style-position: inside;
+	list-style: disc;
+	margin-bottom: 5px;
+	padding-left: 20px;
+}
+
+/* Global
+--------------------------------------------------------
+Specified */
+
+#wrapper {
+	padding: 40px 40px 40px 40px;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+#wrapper a {
+	padding-bottom: 1px;
+}
+
+header h1 {
+	background-color: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+
+    color: transparent;
+}
+
+#social {
+	margin-top: -10px;
+}
+
+#social a {
+	color: #5D8AA6;
+}
+
+footer {
+	padding-top: 50px;
+	font-size: 75%;
+}
