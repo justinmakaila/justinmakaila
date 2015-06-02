@@ -18,28 +18,27 @@ a {
     -webkit-background-clip: text;
     -moz-background-clip: text;
 
-    /* This sets the background to blue fot what happens next */
-	background-color: #5D8AA6;
-	/* Colors the text transparent so you can see the background */
-	color: transparent;
+	background-color: transparent;
+	color: #5D8AA6;
+
 	/* Opacity is set in place for the hover effect, in this case, fade-in-out */
 	opacity: 0.6;
 	/* Cause who needs underlined links? */
 	text-decoration: none;
 
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.15s ease-in-out;
     /* Vendor prefix MOZ(firefox), WEBKIT(chrome, safari, ios, android), O(opera), MS(ie) */
-    -moz-transition: opacity 1s ease-in-out;
-    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 0.15s ease-in-out;
+    -webkit-transition: opacity 0.15s ease-in-out;
 }
 
 a:hover {
 	/* Opacity is set in place for the hover effect, in this case, fade-in-out */
 	opacity: 1.0;
 	/* This transition makes it so opacity fades in and out at its set time */
-    transition: opacity .55s ease-in-out;
-    -moz-transition: opacity .55s ease-in-out;
-    -webkit-transition: opacity .55s ease-in-out;
+    transition: opacity 0.15s ease-in-out;
+    -moz-transition: opacity 0.15s ease-in-out;
+    -webkit-transition: opacity 0.15s ease-in-out;
 }
 
 p {
